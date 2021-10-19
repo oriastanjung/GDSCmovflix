@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MovFlix</title>
+    <link rel="icon" href="./images/titleBar.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!--font-family: 'Barlow Semi Condensed', sans-serif;-->
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="sticky">
+      <nav class="navigation">
+        <div class="navTitle">
+          <h1>MovFlix</h1>
+        </div>
+        <div class="navBar">
+          <ul class="navContainer">
+            <li class="navItem">
+              <form id="form" >
+                <input id="search" type="text" placeholder="Search Movies">
+              </form>
+            </li>
+            <li class="navItem">
+              <span class="hidden"><a href="index.html"><img class="navIcon" src="./images/home.svg" alt=""></a></span><a href="#header"> Home </a>
+            </li>
+            <li class="navItem">
+              <span class="hidden"><a href="index.html"><img class="navIcon" src="./images/film.svg" alt=""></a></span><a href="#movieLocate"> Movies </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main id="header">
+      <section class="hero">
+        <article class="heroInfo">
+          <h2>Sorry the page you search is not found</h2>
+          <p>
+            This page is just to indicate that the movie details on MOVFLIX are still under development.
+          </p>
+          <button><a href="index.html">Back to Home</a></button>
+        </article>
+        <aside class="heroImg">
+          <img src="./images/404.svg" alt="heroImg" />
+        </aside>
+      </section>
+    </main>
+
+    <footer id="footer" class="footer">
+      <section class="center">
+        <p>&copy;2021 Copyright &#8226; All Rigth Reserved &#8226; O.Riastanjung (GDSC ITB 2021 Member) </p>
+        
+      </section>
+    </footer>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

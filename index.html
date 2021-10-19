@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MOVFLIX</title>
+    <link rel="icon" href="./images/ICONNAV.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!--font-family: 'Barlow Semi Condensed', sans-serif;-->
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="sticky">
+      <nav class="navigation">
+        <div class="navTitle">
+          <h1>MovFlix</h1>
+        </div>
+        <div class="navBar">
+          <ul class="navContainer">
+            <li class="navItem">
+              <form id="form" >
+                <input id="search" type="text" placeholder="Search Movies">
+              </form>
+            </li>
+            <li class="navItem">
+              <span class="hidden"><a href="#header"><img class="navIcon" src="./images/home.svg" alt=""></a></span><a href="#header"> Home </a>
+            </li>
+            <li class="navItem">
+              <span class="hidden"><a href="#movieLocate"><img class="navIcon" src="./images/film.svg" alt=""></a></span><a href="#movieLocate"> Movies </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main id="header">
+      <section class="hero">
+        <article class="heroInfo">
+          <h2>Search and read the most rated and popular movies based on IMDb</h2>
+          <p>
+            In MOVFLIX, you can search and read a lot of high rated movies that will bring back
+            your mood and make you happy again.
+          </p>
+          <button><a href="#movieLocate">See Now</a></button>
+        </article>
+        <aside class="heroImg">
+          <img src="./images/heroIMG.svg" alt="heroImg" />
+        </aside>
+      </section>
+      <section id="movieLocate" class="movie">
+      </section>
+    </main>
+
+    <footer id="footer" class="footer">
+      <section class="center">
+        <p>&copy;2021 Copyright &#8226; All Rigth Reserved &#8226; O.Riastanjung (GDSC ITB 2021 Member) </p>
+        
+      </section>
+    </footer>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

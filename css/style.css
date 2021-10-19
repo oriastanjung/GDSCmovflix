@@ -1,0 +1,394 @@
+*{
+    
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    color: #272848;
+}
+/*
+color pick
+    NAV = #e7e7f8;
+    BG = #efeff8;
+    purple =#6d71f9;
+    black = #272848;
+*/
+body{
+    margin: 0;
+    background-color: #efeff8;
+}
+.hidden{
+    display: none;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sticky{
+    position: sticky;
+    top: 0;
+}
+.navigation{
+    display: flex;
+    flex: 1;
+    padding: 0 0 0 1.5em;
+    background-color: #e7e7f8;
+    
+}
+
+.navTitle{
+    cursor: pointer;
+    display: flex;
+    flex: 0.8;
+    align-items: center;
+}
+.navTitle h1{
+    text-transform: uppercase;
+    font-size: 2em;
+    color: #6d71f9;
+    font-weight: 800;
+}
+.navBar{
+    display: flex;
+    flex: 0.2;
+    align-items: center;
+}
+
+.navContainer{
+    display: flex;
+    flex-direction: row;
+}
+.navContainer li{
+    margin-right: 4em;
+    list-style: none;
+}
+.navItem a{
+    text-transform: uppercase;
+    font-size: 1.2em;
+    font-weight: 500;
+    text-decoration: none;
+}
+.navItem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navItem form input{
+    padding: 0.5em;
+    border: 1px solid #6d71f9;
+    border-radius: 10px;
+    background-color: transparent;
+    font-size: 1em;
+    color: #6d71f9;
+}
+
+
+
+.hero{
+    margin: 4em 5em 3em 5em ;
+    display: flex;
+    flex: 1;
+}
+.heroInfo{
+    flex: 0.5;
+    align-items: center;
+    justify-content: center;
+}
+.heroInfo h2{
+    margin-bottom: 0 !important;
+    text-align: left;
+    font-size: 2.3em;
+    font-weight: 500;
+}
+.heroInfo p{
+    margin-top: 0.3em;
+    font-size: 1.7em;
+}
+.heroInfo button{
+    padding: 0.7em 1.7em 0.7em 1.7em;
+    background: #6d71f9;
+    text-decoration: none;
+    border: none;
+    border-radius: 9px;
+    color:white;
+    font-size: 1.2em;
+    font-weight: 400;
+    cursor: pointer;
+}
+.heroInfo button a{
+    color: white;
+    text-decoration: none;
+}
+.heroImg{
+    flex: 0.4;
+    width: 4em;
+    height: 10em;
+}
+.heroImg img{
+    margin-left: 12em;
+    display: flex;
+    width: 80%;
+    justify-content: flex-end;
+}
+
+
+
+
+
+
+
+.movie{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 15em 5em 3em 5em ;
+}
+.movies{
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    box-shadow: -1px -4px 13px 2px rgba(95,95,95,0.47);
+    -webkit-box-shadow: -1px -4px 13px 2px rgba(95,95,95,0.47);
+    -moz-box-shadow: -1px -4px 13px 2px rgba(95,95,95,0.47);
+    background-color: #f7f7ff;
+    width: 26%;
+    height: 700px;
+    overflow: auto;
+    margin-bottom: 3em;
+    margin-right: 5em;
+}
+.moviesThumbnail{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.moviesThumbnail img{
+    
+    width: 100%;
+    height: 300px;
+    object-position: center;
+    object-fit: cover;
+}
+.moviesInfo{
+    margin-top: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+.moviesTitle{
+    font-size: 2em;
+}
+.moviesRating{
+    font-size: 1.1em;
+    color: #6d71f9;
+}
+.moviesDesc{
+    font-size: 1.3em;
+    text-align: center;
+    font-weight: 300;
+}
+
+.footer{
+    background-color: #f7f7ff;
+    padding: 2.5em;
+    border-top: 1px solid rgba(202, 202, 202, 0.466);
+}
+
+@media (max-width : 1025.98px){
+    .navTitle h1{
+        font-size: 2.5em;
+    }
+    .navItem a{
+        font-size: 1.8em;
+    }
+    .heroInfo h2{
+        font-size: 3em;
+    }
+    .heroInfo p{
+        font-size: 2.5em;
+    }
+    .heroInfo button {
+        font-size: 2em;
+    }
+    .heroImg{
+        flex: 0.5;
+    }
+    .heroImg img{
+        margin-left: 4em;
+        width: 100%;
+    }
+    .movie{
+        margin: 7em 0 7em 0;
+    }
+    .movies{
+        margin: 8em 1em 2em 1em;
+        width: 600px;
+        height: 100%;
+    }
+    .moviesThumbnail img{
+        height: 430px;
+    }
+    .moviesTitle{
+        font-size: 2.4em;
+    }
+    .moviesRating{
+        font-size: 1.8em;
+    }
+    .moviesDesc{
+        font-size: 2em;
+    }
+}
+
+@media (max-width : 769.98px){
+    .navTitle h1{
+        font-size: 2.5em;
+    }
+    .navItem a{
+        font-size: 1.8em;
+    }
+    .heroImg{
+        flex: 0.6;
+    }
+    .heroImg img{
+        margin-left: 4em;
+        width: 100%;
+    }
+    .movie{
+        margin: 7em 0 7em 0;
+    }
+    .movies{
+        margin: 0 1em 2em 1em;
+        width: 600px;
+        height: 100%;
+    }
+    .moviesThumbnail img{
+        height: 430px;
+    }
+    .moviesTitle{
+        font-size: 2.4em;
+    }
+    .moviesRating{
+        font-size: 1.8em;
+    }
+    .moviesDesc{
+        font-size: 2em;
+    }
+}
+
+
+@media (max-width: 420.98px) { 
+    .navigation{
+        padding: 0;
+    }
+    .navTitle{
+        margin-left: 0.7em;
+        flex: 0.3;
+    }
+    .navBar{
+        flex: 0.65;
+        justify-content: flex-end;
+    }
+    .navTitle h1{
+        font-size: 1.8em;
+    }
+    .navItem>a {
+        display: none;
+    }
+    .hidden{
+        display: flex !important;
+        justify-content: flex-end;
+        cursor: pointer;
+    }
+    .navItem{
+        display: flex;
+        margin-right: 0.6em !important;
+        justify-content: flex-end;
+    }
+    
+    .navIcon{
+        width: 0.83em;
+    }
+    .navItem form input{
+        width: 90px;
+    }
+    .hero{
+        margin: 0;
+    }
+    .heroInfo{
+        flex: 1;
+        padding: 1em;
+    }
+    .heroImg{
+        display: none;
+    }
+
+
+
+    .movie{
+        margin: 7em 0 7em 0;
+    }
+    .movies{
+        margin: 0 1em 2em 1em;
+        width: 400px;
+    }
+}
+
+
+
+@media (max-width: 320.98px) { 
+    .navigation{
+        padding: 0;
+    }
+    .navTitle{
+        margin-left: 0.7em;
+        flex: 0.1;
+    }
+    .navBar{
+        flex: 0.7;
+        justify-content: flex-end;
+    }
+    .navTitle h1{
+        font-size: 1.8em;
+    }
+    .navItem>a {
+        display: none;
+    }
+    .hidden{
+        display: flex !important;
+        justify-content: flex-end;
+        cursor: pointer;
+    }
+    .navItem{
+        display: flex;
+        margin-right: 0.6em !important;
+        justify-content: flex-end;
+    }
+    
+    .navIcon{
+        width: 0.83em;
+    }
+    .navItem form input{
+        width: 60px;
+    }
+    .hero{
+        margin: 0;
+    }
+    .heroInfo{
+        flex: 1;
+        padding: 1em;
+    }
+    .heroImg{
+        display: none;
+    }
+
+
+
+    .movie{
+        margin: 7em 0 7em 0;
+    }
+    .movies{
+        margin: 0 1em 2em 1em;
+        width: 400px;
+    }
+}
+
