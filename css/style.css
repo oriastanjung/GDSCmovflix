@@ -141,7 +141,7 @@ body{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin: 15em 5em 3em 5em ;
+    margin: 18em 5em 3em 5em ;
 }
 .movies{
     -webkit-border-radius: 10px;
@@ -157,14 +157,13 @@ body{
     margin-bottom: 3em;
     margin-right: 5em;
 }
+
 .moviesThumbnail{
-    
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .moviesThumbnail img{
-    
     width: 100%;
     height: 300px;
     object-position: center;
