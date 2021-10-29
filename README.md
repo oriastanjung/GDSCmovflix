@@ -5,7 +5,8 @@ This is an website about listing an movie using rest api => TMDB api. for GDSC F
 
 
 ## Description
-This website is a list of movies that get from the API using TMBD API. Here you can read, see the rate of the movies, and search movie that you want to search.
+This website is a list of movies that get from the API using TMBD API.   
+Here you can read, see the rate of the movies, and search movie that you want to search.
 
 ## Feature
 * Read Movies Overview
@@ -15,10 +16,14 @@ This website is a list of movies that get from the API using TMBD API. Here you 
 * Fully Responsive Design
 
 ### Creator
-![Image of GDSC](/images/gdsc.png)
+![Image of GDSC](/images/gdsc.png)  
 
-Name : O. Riastanjung
-GDSC ITB 2021-2022 Member
-ID Member : 117
+
+Name : O. Riastanjung  
+
+GDSC ITB 2021-2022 Member  
+
+ID Member : 117  
+
 
 
