@@ -131,9 +131,74 @@ body{
 }
 
 
+.modal{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
 
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 15px;
+    border: 1px solid #888;
+    width: 80%;
+    border-radius: 40px;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 40px;
+    font-weight: bold;
+  }
+  
+  .modal-movie{
+      margin-top: 10%;
+      display: flex;
+      justify-content: center;
+  }
+  .modal-movie-thumbnail {
+      width: 30%;
+      text-align: center;
+  }
+  
+  .modal-movie-thumbnail img{
+      margin-top: 6em;
+      width: 90%;
+      height: 60%;
+      object-fit: cover;
+      
+  }
 
+  .modal-movie-info{
+      width: 70%;
+      text-align: center;
+  }
+  .modal-movie-info-title h2{
+      font-size: 40px;
+  }
+  .modal-movie-info-description{
+      height: 60%;
+      overflow: auto;
+  }
+  .modal-movie-info-description p{
+      font-size: 35px;
+      cursor: pointer;
+  }
 
+  .close:hover,
+  .close:focus {
+    color: #6d71f9;
+    text-decoration: none;
+  }
 
 
 .movie{
@@ -216,6 +281,16 @@ body{
         margin-left: 4em;
         width: 100%;
     }
+    .modal-movie-thumbnail {
+        width: 50%;
+        height: 800px;
+    }
+    
+    .modal-movie-info{
+        width: 50%;
+        height: 800px;
+    }
+    
     .movie{
         margin: 7em 0 7em 0;
     }
@@ -252,6 +327,22 @@ body{
         margin-left: 4em;
         width: 100%;
     }
+    .modal-movie{
+        margin-top: 0;;
+    }
+    .modal-movie-thumbnail {
+        width: 50%;
+        height: 700px !important;
+    }
+
+    .modal-movie-info{
+        width: 50%;
+        height: 660px;
+    }
+    .modal-movie-info-description {
+       margin-top: -2em;
+    }
+
     .movie{
         margin: 7em 0 7em 0;
     }
@@ -271,6 +362,12 @@ body{
     }
     .moviesDesc{
         font-size: 2em;
+    }
+    .modal-movie-thumbnail{
+        height: 70%;
+    }
+    .modal-movie-info-description p{
+        font-size: 28px;
     }
 }
 
@@ -320,6 +417,36 @@ body{
     .heroImg{
         display: none;
     }
+
+    .modal-movie{
+        margin-top: 0;
+        display: block;
+    }
+    .modal-movie-thumbnail {
+        margin-left: 2.3%;
+        margin-top: -2em;
+        width: 100%;
+        height: 400px !important;
+        margin-bottom: -4em;
+        
+    }
+
+    .modal-movie-info{
+        margin: 0 auto;
+        text-align: center;
+        width: 100%;
+        height: 300px;
+    }
+    .modal-movie-info-title h2{
+        font-size: 24px;
+    }
+    .modal-movie-info-description {
+       margin-top: 0em;
+    }
+    .modal-movie-info-description p{
+        font-size: 18px;
+    }
+
 
 
 
@@ -380,7 +507,41 @@ body{
         display: none;
     }
 
+    .modal-movie{
+        height: 700px !important;
+        margin-top: 0;
+        display: block;
+    }
+    .modal-movie-thumbnail {
+        margin-left: 3%;
+        margin-top: 0;
+        width: 100%;
+        height: 400px !important;
+        margin-bottom: -4em;
+    }
+    .modal-movie-thumbnail img{
+        margin-top: 4em;
+    }
 
+    .modal-movie-info{
+        margin: 0 auto;
+        text-align: center;
+        width: 100%;
+        height: 400px;
+    }
+    .modal-movie-info-title h2{
+        font-size: 24px;
+    }
+    .modal-movie-info-description {
+       margin-top: 0em;
+    }
+    .modal-movie-info-description p{
+        font-size: 18px;
+    }
+
+
+
+    
 
     .movie{
         margin: 7em 0 7em 0;
