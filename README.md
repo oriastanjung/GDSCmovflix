@@ -12,8 +12,9 @@ This website is a list of movies that get from the API using TMBD API. Here you 
 * Search Movies
 * See Movies Rating
 * Pop Up Modal Movies, So easier to read
+* Fully Responsive Design
 
 ### Creator
 Name : O. Riastanjung
 GDSC ITB 2021-2022 Member
-![Image of GDSC](/images/gdsc.PNG)
+![Image of GDSC](/images/gdsc.png)
