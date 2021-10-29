@@ -15,6 +15,10 @@ This website is a list of movies that get from the API using TMBD API. Here you 
 * Fully Responsive Design
 
 ### Creator
+![Image of GDSC](/images/gdsc.png)
+
 Name : O. Riastanjung
 GDSC ITB 2021-2022 Member
-![Image of GDSC](/images/gdsc.png)
+ID Member : 117
+
+
