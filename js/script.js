@@ -39,6 +39,7 @@ let modalCloseButton;
 
 
 function takeID(x) {
+  
   fetch(API_URL)
     .then((res) => res.json())
     .then((data) => {
@@ -74,13 +75,57 @@ function takeID(x) {
             closeButton.addEventListener("click", () => {
               document.getElementById("modal").style.display = "none";
             });
+        }else{
+          fetch(SEARCH_URL + "&query=" + search.value)
+          .then((res) => res.json())
+          .then((data) => {
+            let item = data.results;
+
+            for(let i = 0 ; i < item.length ; i++){
+              if (item[i].id === x) {
+                
+                modalLoc.innerHTML = "";
+                
+                modalLoc.style.display = "block";
+                modalContent = `<div class="modal-content">`;
+                modalCloseButton = `<div id="close-btn" class="close">&times;</div>`;
+                modalMovie = ` <div class="modal-movie">`;
+                modalThumbnail = `<div class="modal-movie-thumbnail" >`;
+                modalImg = `<img src="${IMG_URL}${item[i].poster_path}" alt="" srcset=""></div>`;
+                modalInfo = `<div class="modal-movie-info">`;
+                modalTitle = `<div class="modal-movie-info-title"> <h2>${item[i].title}</h2></div>`;
+                modalDesc = `<div class="modal-movie-info-description"><p>${item[i].overview}</p></div>`;
+      
+                modalLoc.innerHTML +=
+                  modalContent +
+                  modalCloseButton +
+                  modalMovie +
+                  modalThumbnail +
+                  modalImg +
+                  modalInfo +
+                  modalTitle +
+                  modalDesc +
+                  `</div></div></div>`;
+      
+                  
+                  let closeButton = document.getElementById("close-btn");
+                  closeButton.addEventListener("click", () => {
+                    document.getElementById("modal").style.display = "none";
+                  });
+                  
+              }else{
+                continue;
+              }
+            }
+          })
+          .catch((error) =>{
+            console.log('error = ', error);
+          });
         }
       });
     });
 }
-closeButton.addEventListener("click", () => {
-  modalLoc.style.display = "none";
-});
+
 function ShowMovies(data) {
   let i = 0;
   movie.innerHTML = "";
